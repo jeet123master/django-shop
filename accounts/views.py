@@ -8,7 +8,7 @@ from .forms import *
 
 @login_required(login_url="login")
 def Dashboard(request):
-	return render(request, 'frontpage/dashboard.html')
+	return render(request, 'store/dashboard.html')
 
 def UserRegister(request):
 	if request.user.is_authenticated:
